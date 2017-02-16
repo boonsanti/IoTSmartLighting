@@ -1,0 +1,10 @@
+<ion-view style="" class=" " id="page1" title="IoT Smart Lighting">
+    <ion-content class="has-header" padding="true">
+        <form class="list " id="boonSmartLighting-form1">
+            <ion-toggle ng-model="switchState1" ng-change="switchChange1(switchState1)">1st Floor Light</ion-toggle>
+        </form>
+        <center>
+        	<button ng-click="switchToggle1()" class="button button-light"><img ng-src="{{imageUrl}}"></button>
+        </center>
+    </ion-content>
+</ion-view>
