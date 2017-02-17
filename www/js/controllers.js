@@ -33,6 +33,7 @@ angular.module('app.controllers', [])
       microgear.setAlias('Sonoff01HTML5');    /* alias can be renamed anytime with this function */
       microgear.subscribe("/Sonoff01/state");
       console.log("Micogear connected.");
+      microgear.chat("Sonoff01","?");
   });
 
   microgear.on("closed", function() {
